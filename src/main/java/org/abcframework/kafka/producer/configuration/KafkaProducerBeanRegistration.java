@@ -2,7 +2,6 @@ package org.abcframework.kafka.producer.configuration;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.abcframework.common.configuration.bean.SpringBeanRegistrationBase;
 import org.abcframework.kafka.producer.configuration.KafkaProducerConfiguration.KafkaProducerProperties;
 import org.abcframework.kafka.producer.service.impl.KafkaProducer;

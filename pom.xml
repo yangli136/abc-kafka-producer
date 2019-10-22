@@ -5,15 +5,16 @@
   <parent>
     <groupId>org.abcframework</groupId>
     <artifactId>abc-parent</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
   </parent>
   <artifactId>abc-kafka-producer</artifactId>
   <name>abc-kafka-producer</name>
   <version>0.0.1-SNAPSHOT</version>
   <description>Kafka Producer Utility</description>
   <properties>
-    <abc-common.version>0.0.2-SNAPSHOT</abc-common.version>
+    <abc-common.version>0.0.3-SNAPSHOT</abc-common.version>
     <spring-boot-maven-plugin.version>2.1.5.RELEASE</spring-boot-maven-plugin.version>
+    <start-class>org.abcframework.kafka.producer.boot.KafkaProducerApplication</start-class>
   </properties>
   <dependencies>
     <dependency>
@@ -65,26 +66,10 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>${project.artifactId}</finalName>
     <plugins>
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>${spring-boot-maven-plugin.version}</version>
-        <configuration>
-          <mainClass>org.abcframework.kafka.producer.boot.KafkaProducerApplication</mainClass>
-          <layout>ZIP</layout>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>repackage</goal>
-            </goals>
-            <configuration>
-              <attach>false</attach>
-            </configuration>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>

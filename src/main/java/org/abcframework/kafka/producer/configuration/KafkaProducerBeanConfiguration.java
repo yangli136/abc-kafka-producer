@@ -1,7 +1,6 @@
 package org.abcframework.kafka.producer.configuration;
 
 import java.util.List;
-
 import org.abcframework.kafka.producer.service.impl.KafkaProducer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
