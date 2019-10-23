@@ -13,7 +13,6 @@
   <description>Kafka Producer Utility</description>
   <properties>
     <abc-common.version>0.0.3-SNAPSHOT</abc-common.version>
-    <spring-boot-maven-plugin.version>2.1.5.RELEASE</spring-boot-maven-plugin.version>
     <start-class>org.abcframework.kafka.producer.boot.KafkaProducerApplication</start-class>
   </properties>
   <dependencies>
@@ -70,6 +69,10 @@
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>pl.project13.maven</groupId>
+        <artifactId>git-commit-id-plugin</artifactId>
       </plugin>
     </plugins>
   </build>
