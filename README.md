@@ -10,7 +10,7 @@ Kafka details.
 
 ## Usage
 
-in kafka-producer.properties
+in kafka-producer-${app.stack}.properties
 
 ```
 abc.kafka.producers[0].producerId=producer0
@@ -72,7 +72,7 @@ mvn -o spring-boot:run -Dspring-boot.run.jvmArguments="-Dweb.test.enabled=true -
 Bring up a web browser:
 
 ```
-http://localhost:8090/send
+http://localhost:8090/send?key=k1&message=m1
 ```
 
 Each time a refresh of the page will send out one new message.
